@@ -1,0 +1,26 @@
+.App {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding: 20px;
+    align-items: flex-start;
+}
+
+.App_Control {
+    flex: 0 0 250px; 
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.Dashboard {
+    display: flex;
+    flex: 1; 
+    gap: 20px;
+}
+
+.History_Column {
+    flex: 1; 
+    display: flex;
+    flex-direction: column;
+}
