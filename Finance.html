@@ -8,16 +8,19 @@
 </head>
 <body>
     <div class="App">
+
         <div class="App_Control">
+
     <div class="Balance_User">
         <p>Ваш баланс:</p>
         <p id="balance"> 0 </p>
     </div>
-    <div class="Amout_Number"> 
+    
+    <div class="amount-block"> 
         <input type="number" id="amount" placeholder="Введите сумму">
     </div>
 
-    <div class="categories_Name">
+    <div class="categories_block">
     <select id="categories" name="category">
     <option value="Продукты">Продукты</option>
     <option value="Кафе">Кафе</option>
@@ -34,17 +37,19 @@
 
 <div class="Dashboard"> 
     
-        <div class="History_Column">
-            <button id="All_income" class="header_btn income">Всі витратити</button>
-            <div id="CreateAll_income"></div>
-        </div>
+<div class="History_Column">
+    <button id="All_income" class="header_btn income">
+        Всі надходження
+    </button>
+    <div id="CreateAll_income"></div>
+</div>
 
-        <div class="History_Column">
-            <button id="All_expenses" class="header_btn expenses">Всі надходження</button>
-            <div id="CreateAll_expenses"></div>
-        </div>
-    
-    </div>
+<div class="History_Column">
+    <button id="All_expenses" class="header_btn expenses">
+        Всі витрати
+    </button>
+    <div id="CreateAll_expenses"></div>
+</div>
 
 </div> 
 </body>
