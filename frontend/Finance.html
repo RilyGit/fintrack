@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FinTrack - Управління фінансами</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Finance.css">
+</head>
+<body>
+    <div class="app-container">
+        
+        <header class="balance-widget">
+            <div class="balance-info">
+                <p>Мій баланс</p>
+                <h1 id="balance">0 ₴</h1>
+            </div>
+            <div class="balance-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="2"/><line x1="2" y1="10" x2="22" y2="10"/></svg>
+            </div>
+        </header>
+
+        <main class="dashboard">
+            <section class="control-panel card">
+                <h3>Додати транзакцію</h3>
+                
+                <div class="input-group">
+                    <label for="amount">Сума</label>
+                    <div class="input-wrapper">
+                        <input type="number" id="amount" placeholder="0" min="1">
+                        <span class="currency-symbol">₴</span>
+                    </div>
+                </div>
+                
+                <div class="input-group">
+                    <label for="category">Категорія</label>
+                    <select id="category">
+                        <option value="Продукти">🛒 Продукти</option>
+                        <option value="Кафе">☕ Кафе</option>
+                        <option value="Дім">🏠 Дім</option>
+                        <option value="Транспорт">🚌 Транспорт</option>
+                        <option value="Зарплата">💰 Зарплата</option>
+                        <option value="Інше">✨ Інше</option>
+                    </select>
+                </div>
+
+                <div class="action-buttons">
+                    <button id="btn-income" class="btn btn-income">Дохід</button>
+                    <button id="btn-expense" class="btn btn-expense">Витрата</button>
+                </div>
+            </section>
+
+            <section class="history-panel">
+                <div class="history-column card">
+                    <div class="column-header">
+                        <div class="dot income-dot"></div>
+                        <h3>Надходження</h3>
+                    </div>
+                    <div id="income-list" class="list"></div>
+                </div>
+                
+                <div class="history-column card">
+                    <div class="column-header">
+                        <div class="dot expense-dot"></div>
+                        <h3>Витрати</h3>
+                    </div>
+                    <div id="expense-list" class="list"></div>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="Finance.js"></script>
+</body>
+</html>
